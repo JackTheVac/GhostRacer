@@ -1,0 +1,290 @@
+ ////add new Zombie Cab
+    //int ChanceVehicle = max(100 - getLevel() * 10, 20);
+    //int ZomCab = randInt(0, ChanceVehicle - 1);
+    //int curLane = randInt(0, 2);  //0 = left, 1 = middle, 2 = right
+    //double startY;
+    //double initYspeed;
+    //int curLaneX = -1;
+    //bool foundCurLane = false;
+
+    //switch (curLane)
+    //{
+    //case 0:
+    //{
+    //    //check left lane
+    //    for (p = actorList.begin(); p != actorList.end(); p++)
+    //    {
+    //        if (!((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) && ((*p)->getY() > VIEW_HEIGHT / 3))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() + randInt(2, 4);
+    //            foundCurLane = true;
+    //            break;
+    //          
+    //        }
+    //        else if (!((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //                ( ((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) && ((*p)->getY() < VIEW_HEIGHT *(2/ 3)))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = VIEW_HEIGHT - SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() - randInt(2, 4);
+    //            curLaneX = 0; //left
+    //            foundCurLane = true;
+    //            break;
+
+    //        }
+    //    }
+
+    //    if (foundCurLane == true)
+    //        break;
+
+    //    //check middle Lane
+    //    for (p = actorList.begin(); p != actorList.end(); p++)
+    //    {
+    //        if (!((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 &&  (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 &&  (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) && ((*p)->getY() > VIEW_HEIGHT / 3))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() + randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 1;
+    //            break;
+
+    //        }
+    //        else if (!((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //                 (((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) && ((*p)->getY() < VIEW_HEIGHT * (2 / 3)))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = VIEW_HEIGHT - SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() - randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 1;
+    //            break;
+    //        }
+    //    }
+
+    //    if (foundCurLane == true)
+    //        break;
+
+    //    //check right lane
+    //    for (p = actorList.begin(); p != actorList.end(); p++)
+    //    {
+    //        if (!((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getRE() - ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE())) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getRE() - ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE())) && ((*p)->getY() > VIEW_HEIGHT / 3))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() + randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 2;
+    //            break;
+
+    //        }
+    //        else if (!((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) && ((*p)->getY() < VIEW_HEIGHT * (2 / 3)))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = VIEW_HEIGHT - SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() - randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 2;
+    //            break;
+    //        }
+    //    }
+
+    //    break;
+
+    //}
+    //case 1:
+    //    //check middle Lane
+    //    for (p = actorList.begin(); p != actorList.end(); p++)
+    //    {
+    //        if (!((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) && ((*p)->getY() > VIEW_HEIGHT / 3))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() + randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 1;
+    //            break;
+
+    //        }
+    //        else if (!((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) && ((*p)->getY() < VIEW_HEIGHT * (2 / 3)))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = VIEW_HEIGHT - SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() - randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 1;
+    //            break;
+    //        }
+    //    }
+
+    //    if (foundCurLane == true)
+    //        break;
+
+    //    //check right lane
+    //    for (p = actorList.begin(); p != actorList.end(); p++)
+    //    {
+    //        if (!((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getRE() - ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE())) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getRE() - ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE())) && ((*p)->getY() > VIEW_HEIGHT / 3))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() + randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 2;
+    //            break;
+
+    //        }
+    //        else if (!((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) && ((*p)->getY() < VIEW_HEIGHT * (2 / 3)))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = VIEW_HEIGHT - SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() - randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 2;
+    //            break;
+    //        }
+    //    }
+
+    //    if (foundCurLane == true)
+    //        break;
+
+
+    //    //check left lane
+    //    for (p = actorList.begin(); p != actorList.end(); p++)
+    //    {
+    //        if (!((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) && ((*p)->getY() > VIEW_HEIGHT / 3))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() + randInt(2, 4);
+    //            foundCurLane = true;
+    //            break;
+
+    //        }
+    //        else if (!((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) && ((*p)->getY() < VIEW_HEIGHT * (2 / 3)))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = VIEW_HEIGHT - SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() - randInt(2, 4);
+    //            curLaneX = 0; //left
+    //            foundCurLane = true;
+    //            break;
+
+    //        }
+    //    }
+
+    //    break;
+
+    //case 2:
+    //{
+    //    //check right lane
+    //    for (p = actorList.begin(); p != actorList.end(); p++)
+    //    {
+    //        if (!((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getRE() - ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE())) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getRE() - ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE())) && ((*p)->getY() > VIEW_HEIGHT / 3))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() + randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 2;
+    //            break;
+
+    //        }
+    //        else if (!((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) && ((*p)->getY() < VIEW_HEIGHT * (2 / 3)))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = VIEW_HEIGHT - SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() - randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 2;
+    //            break;
+    //        }
+    //    }
+
+    //    if (foundCurLane == true)
+    //        break;
+
+    //    //check left lane
+    //    for (p = actorList.begin(); p != actorList.end(); p++)
+    //    {
+    //        if (!((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) && ((*p)->getY() > VIEW_HEIGHT / 3))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() + randInt(2, 4);
+    //            foundCurLane = true;
+    //            break;
+
+    //        }
+    //        else if (!((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() && (*p)->getX() < (LEFT_EDGE + ROAD_WIDTH / 3.0)) && ((*p)->getY() < VIEW_HEIGHT * (2 / 3)))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = VIEW_HEIGHT - SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() - randInt(2, 4);
+    //            curLaneX = 0; //left
+    //            foundCurLane = true;
+    //            break;
+
+    //        }
+    //    }
+
+    //    if (foundCurLane == true)
+    //        break;
+
+    //    //check middle Lane
+    //    for (p = actorList.begin(); p != actorList.end(); p++)
+    //    {
+    //        if (!((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == 0 && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) && ((*p)->getY() > VIEW_HEIGHT / 3))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() + randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 1;
+    //            break;
+
+    //        }
+    //        else if (!((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) ||  //this is no such actor in cur lane
+    //            (((*p)->getAvoidance() && (*p)->getY() == VIEW_HEIGHT - SPRITE_HEIGHT && (*p)->getX() >= getLE() + ROAD_WIDTH / 3.0 && (*p)->getX() < (getRE() - ROAD_WIDTH / 3.0)) && ((*p)->getY() < VIEW_HEIGHT * (2 / 3)))) //or this is such charactor in lane but Y > viewHeight/3
+    //        {
+    //            startY = VIEW_HEIGHT - SPRITE_HEIGHT / 2;
+    //            initYspeed = getGRptr()->getYSpeed() - randInt(2, 4);
+    //            foundCurLane = true;
+    //            curLaneX = 1;
+    //            break;
+    //        }
+    //    }
+    //    break;
+    //}
+    //default:
+    //    break;
+    //}
+
+    //
+    //switch (curLaneX)
+    //{
+    //case 0: //left lane
+    //{
+    //    double startX = ROAD_CENTER - ROAD_WIDTH / 3;
+    //    ZombieCab* ZC = new ZombieCab(IID_ZOMBIE_CAB, startX, startY, 90, 4, 0, 0, 0, initYspeed, false, 3, true, this);
+    //    actorList.push_back(ZC);
+    //    break;
+    //}
+    //case 1: //middle lane
+    //{
+    //    double startX = ROAD_CENTER ;
+    //    ZombieCab* ZC = new ZombieCab(IID_ZOMBIE_CAB, startX, startY, 90, 4, 0, 0, 0, initYspeed, false, 3, true, this);
+    //    actorList.push_back(ZC);
+    //    break;
+    //}
+    //case 2: //right lane
+    //{
+    //    double startX = ROAD_CENTER + ROAD_WIDTH / 3;
+    //    ZombieCab* ZC = new ZombieCab(IID_ZOMBIE_CAB, startX, startY, 90, 4, 0, 0, 0, initYspeed, false, 3, true, this);
+    //    actorList.push_back(ZC);
+    //    break;
+    //}
+    //default:
+    //    break;
+    //}
+    //
+   

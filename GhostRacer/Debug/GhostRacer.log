@@ -1,0 +1,25 @@
+﻿  Actor.cpp
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\Actor.cpp(278,24): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\Actor.cpp(485,53): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  GameController.cpp
+  GameWorld.cpp
+  main.cpp
+  StudentWorld.cpp
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(375,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(387,60): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(403,60): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(423,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(424,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(436,56): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(452,60): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(471,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(485,60): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(499,60): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(618,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(629,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(630,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(666,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(675,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\GhostRacer\StudentWorld.cpp(676,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  GhostRacer.vcxproj -> C:\Users\Jack\Desktop\UCLA Freshman\Winter\CS32\proj 3\GhostRacer-skeleton-windows\GhostRacer\Debug\GhostRacer.exe
